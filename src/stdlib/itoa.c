@@ -5,7 +5,7 @@
  *
  * Description:
  *      itoa - integer to string conversion
- *      This file is part of the BasicOS Kernel LibC.
+ *      This file is part of the SimplixOS Kernel LibC.
  *
  * License:
  * SimplixOS Operating System - An experimental operating system.
@@ -39,9 +39,9 @@
 char *itoa(int value, char *str, int radix)
 {
 	char sign = 0;
-  char temp[17];  // An int can only be 16 bits long
-		// at radix 2 (binary) the string
-		// is at most 16 + 1 null long.
+	char temp[17];  // An int can only be 16 bits long
+			// at radix 2 (binary) the string
+			// is at most 16 + 1 null long.
 	int temp_loc = 0;
 	int digit;
 	int str_loc = 0;

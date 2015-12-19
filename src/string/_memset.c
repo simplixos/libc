@@ -5,7 +5,7 @@
  *
  * Description:
  *      memset - set bytes in memory
- *      This file is part of the BasicOS Kernel LibC.
+ *      This file is part of the SimplixOS Kernel LibC.
  *
  * License:
  * SimplixOS Operating System - An experimental operating system.

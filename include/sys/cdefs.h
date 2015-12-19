@@ -4,8 +4,8 @@
  * File: lib/libc/include/sys/cdefs.h
  *
  * Description:
- *      C library related definitions specific to BasicOS.
- *      This file is part of the BasicOS LibC.
+ *      C library related definitions specific to SimplixOS.
+ *      This file is part of the SimplixOS Kernel LibC.
  *
  * License:
  * SimplixOS Operating System - An experimental operating system.

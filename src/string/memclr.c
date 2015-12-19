@@ -1,14 +1,14 @@
 /***********************************************************************
- * BasicOS Operating System
+ * SimplixOS Operating System
  *
  * File: lib/libk/string/_memclr.c
  *
  * Description:
  *      memclr - clear bytes in memory
- *      This file is part of the BasicOS Kernel LibC.
+ *      This file is part of the SimplixOS Kernel LibC.
  *
  * License:
- * BasicOS Operating System - An experimental operating system.
+ * SimplixOS Operating System - An experimental operating system.
  * Copyright (C) 2015 Aun-Ali Zaidi and its contributors
  *
  * This program is free software: you can redistribute it and/or modify
