@@ -41,11 +41,11 @@
  */
 void *memcpy(void *restrict s1, const void *restrict s2, size_t n)
 {
-  char *tmp = s1;
-  const char *s = s2;
+	char *tmp = s1;
+	const char *s = s2;
 
-  while (n--)
-    *tmp++ = *s++;
+	while (n--)
+		*tmp++ = *s++;
 
-  return s1;
+	return s1;
 }

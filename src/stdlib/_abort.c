@@ -28,15 +28,15 @@
 
 #include <stdlib.h>
 
-#ifdef __bos_k_libc
-  #ifdef _x86
-    #include <bos/k/arch/x86/panic.h>
-  #endif
+#ifdef __simplix_k_libc
+	#ifdef _x86
+		#include <simplix/k/arch/x86/panic.h>
+	#endif
 #endif
 
 /** Abnormal Exit, abort
- * The abort() function shall cause abnormal process
- * termination to occur.
+ *  The abort() function shall cause abnormal process
+ *  termination to occur.
  */
 __attribute__((__noreturn__))
 void abort(void)

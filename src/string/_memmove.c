@@ -45,21 +45,21 @@
  */
 void *memmove(void *s1, const void *s2, size_t n)
 {
-  char *tmp;
-  const char *s;
+	char *tmp;
+	const char *s;
 
-  if (s1 <= s2) {
+	if (s1 <= s2) {
 		tmp = s1;
-    s = s2;
-    while (n--)
-      *tmp++ = *s++;
-  } else {
-    tmp = s1;
-    tmp += n;
-    s = s2;
-    s += n;
-    while (n--)
-      *--tmp = *--s;
-  }
-  return s1;
+		s = s2;
+		while (n--)
+			*tmp++ = *s++;
+	} else {
+		tmp = s1;
+		tmp += n;
+		s = s2;
+		s += n;
+		while (n--)
+			*--tmp = *--s;
+	}
+	return s1;
 }

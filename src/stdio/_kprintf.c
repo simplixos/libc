@@ -30,13 +30,13 @@
 #include <string.h>
 
 #ifdef __GNUC__
-  #include <stdbool.h>
-  #include <stdarg.h>
+	#include <stdbool.h>
+	#include <stdarg.h>
 #endif
 
-#ifdef __bos_k_libc
-  #include <bos/k/vga.h>
-  #include <bos/k/arch/x86/serial.h>
+#ifdef __simplix_k_libc
+	#include <simplix/k/vga.h>
+	#include <simplix/k/arch/x86/serial.h>
 #endif
 
 // Print a string output onto the output stream
@@ -51,7 +51,7 @@ int kputchar(int ic)
 {
 	char c = (char) ic;
 
-  // TODO: MOVE THIS OUT OF HERE!!! ASAP!!!
+	// TODO: MOVE THIS OUT OF HERE!!! ASAP!!!
 	vga_put(c);
 	if(isSerialInitDone()) // Without init writing into console can cause strange lockups and reset
 	{
@@ -146,7 +146,6 @@ int kprintf(const char * __restrict format, ... )
 			goto incomprehensible_conversion;
 		}
 	}
-	//kprint("\n",1);
 	va_end(parameters);
 	return 0;
 }

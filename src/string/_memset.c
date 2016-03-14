@@ -40,9 +40,9 @@
  */
 void *memset(void *s, int c, size_t n)
 {
-  char *xs = s;
+	char *xs = s;
 
-  while (n--)
-    *xs++ = c;
-  return s;
+	while (n--)
+		*xs++ = c;
+	return s;
 }

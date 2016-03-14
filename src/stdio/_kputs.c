@@ -31,5 +31,5 @@
 // Prints a single string onto the output stream.
 int kputs(const char *s)
 {
- 	return kprintf("%s\n", s);
+	return kprintf("%s\n", s);
 }
