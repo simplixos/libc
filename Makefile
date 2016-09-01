@@ -38,7 +38,7 @@ RANLIB=../../../cross/os-toolchain/bin/i686-simplix-ranlib
 INC_DIR=include/
 OS_INC_DIR=../../include/
 
-CFLAGS=-O2 -std=gnu99 -ffreestanding -nostdlib -fbuiltin -Wall -Wextra -I$(OS_INC_DIR) -I$(INC_DIR) -D_x86 -I../../include
+CFLAGS=-O2 -std=gnu99 -ffreestanding -nostdlib -fbuiltin -Wall -Wextra -I$(OS_INC_DIR) -I$(INC_DIR) -D_x86
 
 OBJDIR=obj/
 BIN_DIR=../bin

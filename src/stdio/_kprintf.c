@@ -55,6 +55,8 @@ int kputchar(int ic)
 	vga_put(c);
 	if(isSerialInitDone()) // Without init writing into console can cause strange lockups and reset
 	{
+		// Workaround for faulty x86 variants
+		assert(isSerialInitDone());
 		//TODO: Write into a kernel buffer for debug rather than serial because its a User thing
 		serial_write_char(c);
 	}
