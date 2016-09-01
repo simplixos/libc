@@ -28,6 +28,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <assert.h>
 
 #ifdef __GNUC__
 	#include <stdbool.h>
