@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/string/_strcpy.c
+ * File: lib/libc/src/string/_strcpy.c
  *
  * Description:
  *      strcpy - copy a string and return a pointer to the end of the

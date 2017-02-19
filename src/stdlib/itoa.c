@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/stdlib/itoa.c
+ * File: lib/libc/src/stdlib/itoa.c
  *
  * Description:
  *      itoa - integer to string conversion

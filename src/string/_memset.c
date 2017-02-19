@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/string/_memset.c
+ * File: lib/libc/src/string/_memset.c
  *
  * Description:
  *      memset - set bytes in memory

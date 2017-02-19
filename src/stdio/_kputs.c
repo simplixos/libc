@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/stdio/_kputs.c
+ * File: lib/libc/src/stdio/_kputs.c
  *
  * Description:
  *      Display single string onto output stream.

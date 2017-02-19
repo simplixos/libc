@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/string/_strlen.c
+ * File: lib/libc/src/string/_strlen.c
  *
  * Description:
  *      strlen - get length of fixed size string

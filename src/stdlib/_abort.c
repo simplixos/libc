@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/stdlib/_abort.c
+ * File: lib/libc/src/stdlib/_abort.c
  *
  * Description:
  *      abort - generate an abnormal process abort

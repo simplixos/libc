@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/string/_memmove.c
+ * File: lib/libc/src/string/_memmove.c
  *
  * Description:
  *      memmove - copy bytes in memory with overlaping areas

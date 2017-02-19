@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/string/_memcmp.c
+ * File: lib/libc/src/string/_memcmp.c
  *
  * Description:
  *      memcmp - compare bytes in memory

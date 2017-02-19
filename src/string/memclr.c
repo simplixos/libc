@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/string/_memclr.c
+ * File: lib/libc/src/string/_memclr.c
  *
  * Description:
  *      memclr - clear bytes in memory

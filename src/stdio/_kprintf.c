@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/stdio/_kprintf.c
+ * File: lib/libc/src/stdio/_kprintf.c
  *
  * Description:
  *      Displays a concatenated

@@ -1,7 +1,7 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libk/string/_memcpy.c
+ * File: lib/libc/src/string/_memcpy.c
  *
  * Description:
  *      memcpy - copy bytes in memory
