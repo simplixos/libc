@@ -21,3 +21,6 @@
 
 SOURCES += src/stdlib/_abort.c \
            src/stdlib/itoa.c \
+           src/stdlib/_rand.c \
+           src/stdlib/_rand_r.c \
+           src/stdlib/_srand.c \

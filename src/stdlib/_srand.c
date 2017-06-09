@@ -1,15 +1,15 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libc/include/stdlib.h
+ * File: lib/libc/src/stdlib/_rand.c
  *
  * Description:
- *      Standard LibC related functions.
+ *      srand - seed pseudo-random number generator
  *      This file is part of the SimplixOS Kernel LibC.
  *
  * License:
  * SimplixOS Operating System - An experimental operating system.
- * Copyright (C) 2015-17 Aun-Ali Zaidi and its contributors.
+ * Copyright (C) 2015-17 Aun-Ali Zaidi and its contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,28 +26,25 @@
  *
  ***********************************************************************/
 
-#ifndef _K_STDLIB_H
-#define _K_STDLIB_H
+#include <stdlib.h>
 
-#include <sys/cdefs.h>
+#include "rand.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-__attribute__((__noreturn__))
-void abort(void);
-
-/* Pseudo-Random Number Functions */
-
-#define RAND_MAX 32768
-
-int rand(void);
-int rand_r(unsigned *seed);
-void srand(unsigned int seed);
-
-#ifdef __cplusplus
+/** Pseudo-Random Generator Seeder, srand
+ * The srand() function uses the argument as a seed for a
+ * new sequence of pseudo-random numbers to be returned by
+ * subsequent calls to rand().
+ *
+ * If srand() is then called with the same seed value, the
+ * sequence of pseudo-random numbers shall be repeated. If
+ * rand() is called before any calls to srand() are made,
+ * the same sequence shall be generated as when srand() is
+ * first called with a seed value of 1.
+ *
+ * @param seed Seed value to set
+ */
+void srand(unsigned int seed)
+{
+	if (seed != 0)
+		next = seed;
 }
-#endif
-
-#endif // _K_STDLIB_H

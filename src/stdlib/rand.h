@@ -1,15 +1,15 @@
 /***********************************************************************
  * SimplixOS Operating System
  *
- * File: lib/libc/include/stdlib.h
+ * File: lib/libc/src/stdlib/rand.h
  *
  * Description:
- *      Standard LibC related functions.
+ *      Shared Pseudo-Random Generator variables.
  *      This file is part of the SimplixOS Kernel LibC.
  *
  * License:
  * SimplixOS Operating System - An experimental operating system.
- * Copyright (C) 2015-17 Aun-Ali Zaidi and its contributors.
+ * Copyright (C) 2015-17 Aun-Ali Zaidi and its contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,28 +26,9 @@
  *
  ***********************************************************************/
 
-#ifndef _K_STDLIB_H
-#define _K_STDLIB_H
+#ifndef _K_STDLIB_RAND_H
+#define _K_STDLIB_RAND_H
 
-#include <sys/cdefs.h>
+static unsigned long int next = 1;
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-__attribute__((__noreturn__))
-void abort(void);
-
-/* Pseudo-Random Number Functions */
-
-#define RAND_MAX 32768
-
-int rand(void);
-int rand_r(unsigned *seed);
-void srand(unsigned int seed);
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif // _K_STDLIB_H
+#endif // _K_STDLIB_RAND_H
