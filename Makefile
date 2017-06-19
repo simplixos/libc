@@ -60,20 +60,20 @@ all: $(SOURCES) $(BIN)
 $(BIN): $(OBJS)
 	$(call cmd, \
 	$(AR) rcs $@ $(OBJS), \
-	AR 	$(BIN))
+	AR      $(BIN))
 	@test -d $(BIN_DIR) || mkdir $(BIN_DIR)
 	$(call cmd, \
 	$(RANLIB) $(BIN), \
-	RANLIB $(BIN))
+	RANLIB  $(BIN))
 	@cp $(BIN) $(BIN_DIR)/
 
 obj/%.libc.o: %.c
 	@test -d $(@D) || mkdir $(@D)
 	$(call cmd, \
 	$(CC) -c $< -o $@ $(CFLAGS), \
-	CC 	$<)
+	CC      $(subst obj/,,$@))
 
 clean:
 	$(call cmd, \
 	rm -rf $(OBJS) $(OBJDIR)$(BIN) $(OBJDIR) $(BIN_DIR)/$(BIN) $(BIN), \
-	CLEAN lib/libc/)
+	CLEAN   lib/libc/)
